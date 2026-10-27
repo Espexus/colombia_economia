@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+:root {
+    --blanco: white;
+    --rosa: rgb(255, 161, 177);
+    --rosa-claro: pink;
+    --titulos_oscuros: rgb(6, 0, 87);
+    --letra-clara: rgb(24, 24, 24);
+    --gris-sombra: rgba(57, 57, 57, 0.628);
+}
+
+/* estilos generales del main */
+main {
+    margin-top: 12vh;
+}
+
+/* estilos de mi hero */
+.hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../imgs/fondo-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-anlu {
+    background-image: url("../imgs/fondo-hero2.jpg");
+}
+h1 {
+    font-size: 4em;
+}
+.descripcion-hero {
+    width: 70%;
+    text-align: center;
+    color: var(--letra-clara);
+    font-size: 1.1em;
+    text-shadow: 0px 1px var(--gris-sombra);
+}
+
+/* parte de fondos y flex horizontal */
+.fondo-blanco {
+    color: var(--letra-clara);
+    background-color: var(--blanco);
+    width: 100%;
+    padding: 6% 2%;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 2em;
+    color: var(--titulos_oscuros);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.font12 {
+    font-size: 1.2em;
+}
+.horizontal-flex p {
+    width: 92%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 6%;
+}
+.horizontal-flex img {
+    display: block;
+    width: 80%;
+    box-shadow: 0px 0px 15px black;
+    margin: 0 auto;
+}
+
+/* fondo rosa sección de ubicación y contacto */
+.fondo-rosa {
+    background-color: var(--rosa);
+    padding: 6% 2%;
+    color: var(--blanco);
+}
+.fondo-rosa h2 {
+    color: var(--blanco);
+}
+/* estilos del mapa */
+iframe {
+    display: block;
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px var(--rosa-claro);
+
+    margin-bottom: 12%;
+}
+/* la parte de info contacto */
+.info-contacto {
+    text-align: center;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 4%;
+}
+.enlace-normalizado {
+    display: block;
+    width: 70%;
+    margin: 1% auto;
+    padding: 7px;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    color: var(--blanco);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.enlace-normalizado:hover {
+    cursor: pointer;
+}
+
+/* estilos para el formulario */
+form {
+    width: 90%;
+    padding: 4%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label {
+    font-size: 1.2em;
+    font-family: monospace;
+}
+input {
+    padding: 2px;
+    font-size: 1.1em;
+}
+select {
+    font-size: 1.1em;
+    padding: 2px;
+}
+.boton-formulario {
+    display: block;
+    margin: 4% auto;
+    width: 30%;
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    background-color: var(--rosa);
+    font-size: 1.2em;
+    padding: 6px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px var(--rosa-claro);
+}
+
+/* css de mi footer */
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--rosa);
+    padding: 2% 0;
+    font-size: 0.8em;
+}
+
+/* aqui van ahora los estilos para las siguientes pestañas */
+.fondo-rosa {
+    background-color: var(--rosa);
+}
+
+/* estilos de los items del flex */
+.flex-3 {
+    width: 80%;
+    margin: 0 auto;
+}
+.item-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 10%;
+}
+.item-flex img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.item-flex p {
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.anlu-galleta-nombre {
+    text-align: center;
+    font-weight: normal;
+}
+.boton-invertido-centrado {
+    display: block;
+    width: 30%;
+    font-size: 1.4em;
+    margin: 4% auto;
+    text-align: center;
+
+    background-color: white;
+    color: var(--rosa);
+}
+
+/* navegación entre pestañas de Lulidetalles */
+.menu-secundario {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--rosa-claro);
+}
+.boton-navegacion {
+    flex: 1 1 0;
+    padding: 0.65rem 0.5rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--titulos_oscuros);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+.boton-navegacion:hover {
+    color: var(--letra-clara);
+    border-bottom-color: var(--rosa);
+}
+.boton-navegacion-activo {
+    background-color: var(--rosa);
+    color: white;
+}
+.boton-navegacion-activo:hover {
+    border-bottom-color: var(--gris-sombra);
+    color: var(--blanco);
+}
+
+/* zona para los estilos responsive */
+@media(min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    .enlace-menu {
+        padding: 0 10%;
+    }
+    .enlace-menu:hover {
+        font-size: 1.3em;
+    }
+    .espacio-logo-menu {
+        height: 90%;
+    }
+    .hero {
+        height: 60vh;
+    }
+    h1 {
+        font-size: 7em;
+    }
+
+    .horizontal-flex {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+    }
+    .horizontal-flex p {
+        margin-bottom: 0;
+        flex: 0 0 40%;
+        text-align: justify;
+    }
+    .horizontal-flex img {
+        width: 30%;
+    }
+
+    iframe {
+        display: block;
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .horizontal-flex-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    label {
+        font-size: 1em;
+    }
+    input, select {
+        font-size: 0.8em;
+    }
+    .boton-formulario {
+        width: 10%;
+        font-size: 1.4em;
+    }
+
+    /* responsive de las siguientes páginas */
+    .flex-3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .item-flex {
+        flex: 0 0 28%;
+        margin-bottom: 5%;
+    }
+    .boton-invertido-centrado {
+        width: 10%;
+    }
+    .menu-secundario {
+        gap: 2rem;
+        padding: 0.75rem 2rem;
+    }
+    .boton-navegacion {
+        padding: 0.75rem 1rem;
+    }
+}

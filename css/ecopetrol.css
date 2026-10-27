@@ -1,0 +1,161 @@
+.ecopetrol {
+    --eco-verde: #004b3f;
+    --eco-verde-profundo: #00392f;
+    --eco-amarillo: #ffd500;
+    --eco-texto: #20332e;
+    color: var(--eco-texto);
+}
+
+.eco-hero {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 57, 47, 0.18), rgba(0, 57, 47, 0.36)), url("../imgs/ecologo2.jpg");
+    background-color: var(--eco-verde-profundo);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: normal;
+}
+
+.eco-hero h1 {
+    color: var(--eco-amarillo);
+    text-shadow: 0 2px 8px var(--eco-verde-profundo);
+}
+
+.eco-hero .descripcion-hero {
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 5px var(--eco-verde-profundo);
+}
+
+.eco-menu {
+    border-bottom: 2px solid var(--eco-amarillo);
+    background-color: var(--eco-verde-profundo);
+}
+
+.eco-menu .boton-navegacion {
+    color: white;
+}
+
+.eco-menu .boton-navegacion:hover {
+    color: var(--eco-amarillo);
+    border-bottom-color: var(--eco-amarillo);
+}
+
+.eco-menu .boton-navegacion-activo,
+.eco-menu .boton-navegacion-activo:hover {
+    background-color: var(--eco-verde);
+    border-bottom-color: var(--eco-amarillo);
+    color: var(--eco-amarillo);
+}
+
+.eco-pestana {
+    min-height: 55vh;
+    background: linear-gradient(180deg, #f8fbf9 0%, white 100%);
+}
+
+.eco-bloque {
+    padding: 6% 5%;
+}
+
+.eco-bloque h2 {
+    color: var(--eco-verde);
+    margin-bottom: 3%;
+}
+
+.eco-doble-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 5%;
+    padding: 4%;
+    box-sizing: border-box;
+    border-left: 6px solid var(--eco-amarillo);
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 75, 63, 0.12);
+}
+
+.eco-texto {
+    width: 100%;
+}
+
+.eco-texto p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.eco-texto h3 {
+    color: var(--eco-verde);
+    font-size: 1.5em;
+    margin-bottom: 0.75rem;
+}
+
+.eco-doble-columna img {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 57, 47, 0.18);
+}
+
+#eco-general .eco-doble-columna img {
+    object-fit: contain;
+    background: white;
+}
+
+.eco-texto .eco-fuente {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    color: #53665f;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+.eco-fuente a {
+    color: var(--eco-verde);
+    font-weight: 600;
+}
+
+.eco-fuente a:hover {
+    color: #8a7200;
+}
+
+.eco-footer {
+    padding: 1.5rem 1rem;
+    background-color: var(--eco-verde-profundo);
+    color: white;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .eco-doble-columna {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6%;
+        padding: 3%;
+    }
+
+    .eco-doble-columna .eco-texto,
+    .eco-doble-columna img {
+        flex: 0 0 45%;
+        width: 45%;
+    }
+
+    .eco-alternada {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 1024px) {
+    .eco-hero {
+        height: 60vh;
+    }
+
+    .eco-bloque {
+        padding: 4% 8%;
+    }
+}

@@ -1,0 +1,112 @@
+.site-navigation {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    color: #242424;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.site-navigation-inner {
+    display: flex;
+    width: 100%;
+    min-height: 3.5rem;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.site-navigation a,
+.site-navigation summary {
+    display: flex;
+    min-height: 3.5rem;
+    padding: 0.55rem 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+.site-navigation summary::-webkit-details-marker {
+    display: none;
+}
+
+.site-navigation summary::after {
+    margin-left: 0.45rem;
+    border: 0.3rem solid transparent;
+    border-top-color: currentColor;
+    transform: translateY(0.15rem);
+    content: "";
+}
+
+.site-navigation a:hover,
+.site-navigation summary:hover,
+.site-navigation a:focus-visible,
+.site-navigation summary:focus-visible {
+    background: #e2e2e2;
+    outline-offset: -3px;
+}
+
+.site-navigation-dropdown {
+    position: relative;
+    flex: 1 1 0;
+}
+
+.site-navigation-home {
+    flex: 1 1 0;
+}
+
+.site-navigation-dropdown > summary {
+    width: 100%;
+}
+
+.site-navigation-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    padding: 0.35rem 0;
+    background: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
+.site-navigation-submenu a {
+    min-height: 2.75rem;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.site-navigation-space {
+    height: 3.5rem;
+}
+
+.pagina-economia main {
+    margin-top: 0;
+}
+
+@media (max-width: 480px) {
+    .site-navigation a,
+    .site-navigation summary {
+        padding: 0.45rem 0.25rem;
+        font-size: 0.78rem;
+    }
+
+    .site-navigation summary::after {
+        margin-left: 0.2rem;
+        border-width: 0.25rem;
+    }
+
+    .site-navigation-submenu a {
+        justify-content: center;
+        white-space: normal;
+    }
+}

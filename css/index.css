@@ -1,0 +1,194 @@
+.pagina-economia {
+    --economia-negro: #171717;
+    --economia-gris: #484848;
+    --economia-gris-claro: #f1f1f1;
+    --economia-blanco: #fff;
+    --economia-texto: #242424;
+    color: var(--economia-texto);
+    background-color: var(--economia-blanco);
+}
+
+.economia-hero {
+    position: relative;
+    min-height: 50vh;
+    overflow: hidden;
+    background: var(--economia-negro);
+    isolation: isolate;
+}
+
+.economia-hero::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.28));
+    content: "";
+}
+
+.economia-hero-imagen {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.economia-hero-contenido {
+    width: min(90%, 1100px);
+    color: var(--economia-blanco);
+}
+
+.economia-sobretitulo {
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.economia-hero h1 {
+    color: var(--economia-blanco);
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 1.05;
+}
+
+.economia-hero .descripcion-hero {
+    width: min(90%, 700px);
+    margin-top: 1rem;
+    color: var(--economia-blanco);
+    text-shadow: none;
+}
+
+.economia-contenido {
+    margin-top: 0;
+}
+
+.economia-seccion {
+    padding: 5rem 5%;
+    background-color: var(--economia-blanco);
+    color: var(--economia-texto);
+}
+
+.economia-seccion h2 {
+    margin-bottom: 2rem;
+    color: var(--economia-negro);
+}
+
+.economia-seccion .horizontal-flex {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.economia-seccion .horizontal-flex p {
+    line-height: 1.75;
+}
+
+.economia-seccion .horizontal-flex img {
+    aspect-ratio: 4 / 3;
+    max-height: 420px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.economia-fondo-suave {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e9e9e9 100%);
+}
+
+.economia-fondo-oscuro {
+    background: linear-gradient(145deg, #292929 0%, #101010 100%);
+    color: var(--economia-blanco);
+}
+
+.economia-fondo-oscuro h2 {
+    color: var(--economia-blanco);
+}
+
+.economia-fondo-oscuro .horizontal-flex img {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.economia-fuente {
+    width: min(90%, 1100px);
+    margin: 1.5rem auto 0;
+    color: var(--economia-gris);
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.economia-fuente a {
+    color: var(--economia-negro);
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.economia-fuente a:hover {
+    color: var(--economia-gris);
+}
+
+.economia-fondo-oscuro .economia-fuente {
+    color: #d3d3d3;
+}
+
+.economia-fondo-oscuro .economia-fuente a {
+    color: var(--economia-blanco);
+}
+
+.economia-dato {
+    width: 80%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border-left: 5px solid var(--economia-negro);
+    background: linear-gradient(145deg, #f5f5f5, #e8e8e8);
+}
+
+.economia-dato-cifra {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--economia-negro);
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.economia-dato p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.economia-dato a {
+    color: var(--economia-gris);
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.economia-footer {
+    padding: 1.5rem 5%;
+    background-color: var(--economia-negro);
+    color: var(--economia-blanco);
+    text-align: center;
+    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+    .economia-hero {
+        height: 65vh;
+    }
+
+    .economia-seccion {
+        padding: 5rem 8%;
+    }
+
+    .economia-seccion .horizontal-flex p {
+        flex: 0 0 45%;
+        margin-bottom: 0;
+    }
+
+    .economia-seccion .horizontal-flex img,
+    .economia-seccion .horizontal-flex .economia-dato {
+        width: 35%;
+    }
+}
