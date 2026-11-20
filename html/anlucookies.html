@@ -12,16 +12,16 @@
 <body>
     <nav class="site-navigation" aria-label="Navegación principal">
         <div class="site-navigation-inner">
-            <a class="site-navigation-home" href="../index.html">Inicio</a>
+            <a class="site-navigation-home" href="../index.html" id="tradmenu1">Inicio</a>
             <details class="site-navigation-dropdown">
-                <summary>Grandes compañías</summary>
+                <summary id="tradmenu2">Grandes compañías</summary>
                 <div class="site-navigation-submenu">
                     <a href="ecopetrol.html">Ecopetrol</a>
                     <a href="epm.html">EPM</a>
                 </div>
             </details>
             <details class="site-navigation-dropdown">
-                <summary>Emprendimientos locales</summary>
+                <summary  id="tradmenu3">Emprendimientos locales</summary>
                 <div class="site-navigation-submenu">
                     <a href="lulidetalles.html">Lulidetalles</a>
                     <a href="anlucookies.html">Anlu Cookies</a>
@@ -31,20 +31,20 @@
     </nav>
     <div class="site-navigation-space" aria-hidden="true"></div>
     <section id="anlu-hero" class="hero hero-anlu">
-        <h1>Anlu Cookies</h1>
-        <p class="descripcion-hero">Galletas hechas con amor para deleitar tu paladar</p>
+        <h1 id="trad1">Anlu Cookies</h1>
+        <p class="descripcion-hero" id="trad2">Galletas hechas con amor para deleitar tu paladar</p>
     </section>
 
     <nav aria-label="Navegación de Anlu Cookies" class="menu-secundario">
-        <button type="button" class="boton-navegacion boton-navegacion-activo" data-target="anlu-inicio">Inicio</button>
-        <button type="button" class="boton-navegacion" data-target="anlu-galletas">Galletas</button>
+        <button type="button" class="boton-navegacion boton-navegacion-activo" data-target="anlu-inicio" id="trad3">Inicio</button>
+        <button type="button" class="boton-navegacion" data-target="anlu-galletas" id="trad4">Galletas</button>
     </nav>
 
     <section id="anlu-inicio" class="seccion">
         <section class="fondo-blanco">
-            <h2>Sobre nosotros</h2>
+            <h2 id="trad5">Sobre nosotros</h2>
             <div class="horizontal-flex">
-                <p class="font12">
+                <p class="font12" id="trad6">
                     Anlu Cookies es una tienda en línea con sede en Cúcuta. Vendemos especialmente dentro de la ciudad y en la Universidad de Santander (UDES). Somos el emprendimiento de una adolescente que estudia Ingeniería Industrial y quiere deleitar el paladar de las personas con deliciosas galletas.
                 </p>
                 <img src="../imgs/sobrenos-galletas.png" alt="Galletas Anlu Cookies">
@@ -52,89 +52,91 @@
         </section>
 
         <section class="fondo-rosa">
-            <h2>Ubicación y contacto</h2>
+            <h2 id="trad7">Ubicación y contacto</h2>
             <div class="horizontal-flex">
                 <iframe title="Mapa de Cúcuta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126459.75559173593!2d-72.58682435208893!3d7.908922015653015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66459c645dd28b%3A0x26736c1ff4db5caa!2sC%C3%BAcuta%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1790535581372!5m2!1ses!2sco" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
                 <div class="info-contacto">
-                    <h3>Medios de contacto</h3>
+                    <h3 id="trad8">Medios de contacto</h3>
                     <a href="https://wa.me/573223002028" class="enlace-normalizado" target="_blank" rel="noopener noreferrer">WhatsApp: 3223002028</a>
-                    <a href="tel:+573223002028" class="enlace-normalizado">Teléfono: 3223002028</a>
+                    <a href="tel:+573223002028" class="enlace-normalizado" id="trad9">Teléfono: 3223002028</a>
                     <a href="https://www.instagram.com/anlu.cookies/" class="enlace-normalizado" target="_blank" rel="noopener noreferrer">Instagram: @anlu.cookies</a>
                 </div>
             </div>
         </section>
 
         <section class="fondo-blanco">
-            <h2>Contáctanos</h2>
+            <h2 id="trad10">Contáctanos</h2>
             <form action="" id="formulario-anlu" class="horizontal-flex-3">
                 <div class="parte-form">
-                    <label for="nombre-anlu">Soy:</label>
-                    <input id="nombre-anlu" type="text" name="nombre" placeholder="Nombre">
+                    <label for="nombre-anlu" id="trad11">Soy:</label>
+                    <input id="nombre-anlu" type="text" name="nombre" placeholder="Nombre" data-trad-id="trad12">
                 </div>
 
                 <div class="parte-form">
-                    <label for="sabor-anlu">Me interesa el sabor:</label>
+                    <label for="sabor-anlu" id="trad13">Me interesa el sabor:</label>
                     <select id="sabor-anlu" name="sabor">
-                        <option value="chocolate">Chocolate</option>
-                        <option value="clasica">Clásica</option>
-                        <option value="almendras">Almendras</option>
-                        <option value="chispas">Chispas</option>
+                        <option value="chocolate" id="trad14">Chocolate</option>
+                        <option value="clasica" id="trad15">Clásica</option>
+                        <option value="almendras" id="trad16">Almendras</option>
+                        <option value="chispas" id="trad17">Chispas</option>
                     </select>
                 </div>
 
                 <div class="parte-form">
-                    <label for="ciudad-anlu">Estoy en:</label>
+                    <label for="ciudad-anlu" id="trad18">Estoy en:</label>
                     <input id="ciudad-anlu" type="text" name="ciudad" placeholder="Ciudad">
                 </div>
             </form>
-            <a href="https://wa.me/573223002028" class="boton-formulario" target="_blank" rel="noopener noreferrer">Consultar</a>
+            <a href="https://wa.me/573223002028" class="boton-formulario" target="_blank" rel="noopener noreferrer" id="trad19">Consultar</a>
         </section>
     </section>
 
     <section id="anlu-galletas" class="seccion fondo-rosa" style="display: none;">
-        <h2>Nuestras galletas</h2>
+        <h2 id="trad20">Nuestras galletas</h2>
         <div class="flex-3">
             <div class="item-flex">
                 <img src="../imgs/brownie.png" alt="Brownie de chocolate">
-                <p class="anlu-galleta-nombre">Brownie</p>
+                <p class="anlu-galleta-nombre" id="trad21">Brownie</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/redlove.png" alt="Galleta Amor rojo">
-                <p class="anlu-galleta-nombre">Amor rojo</p>
+                <p class="anlu-galleta-nombre" id="trad22">Amor rojo</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/frchoco.png" alt="Galleta de frutos rojos y chocolate">
-                <p class="anlu-galleta-nombre">Frutos rojos y chocolate</p>
+                <p class="anlu-galleta-nombre" id="trad23">Frutos rojos y chocolate</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/delichoco.png" alt="Galleta Delichoco">
-                <p class="anlu-galleta-nombre">Delichoco</p>
+                <p class="anlu-galleta-nombre" id="trad24">Delichoco</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/marequipe.png" alt="Galleta Mega arequipe">
-                <p class="anlu-galleta-nombre">Mega arequipe</p>
+                <p class="anlu-galleta-nombre" id="trad25">Mega arequipe</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/minitorta.png" alt="Minitorta de cumpleaños">
-                <p class="anlu-galleta-nombre">Minitorta</p>
+                <p class="anlu-galleta-nombre" id="trad26">Minitorta</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/mymchoco.png" alt="Galletas de M&M y chocolate">
-                <p class="anlu-galleta-nombre">M&amp;M y chocolate</p>
+                <p class="anlu-galleta-nombre" id="trad27">M&amp;M y chocolate</p>
             </div>
             <div class="item-flex">
                 <img src="../imgs/combofull.png" alt="Combo completo de galletas">
-                <p class="anlu-galleta-nombre">El combo full</p>
+                <p class="anlu-galleta-nombre" id="trad28">El combo full</p>
             </div>
         </div>
-        <a href="https://wa.me/573223002028" class="boton-formulario boton-invertido-centrado" target="_blank" rel="noopener noreferrer">Consultar</a>
+        <a href="https://wa.me/573223002028" class="boton-formulario boton-invertido-centrado" target="_blank" rel="noopener noreferrer" id="trad29">Consultar</a>
     </section>
 
-    <footer>
+    <footer id="trad30">
         © 2026 Anlu Cookies. Todos los derechos reservados.
     </footer>
 
     <script src="../js/navegacion-subpaginas.js"></script>
+    <script src="../js/cargarPreferencias.js"></script>
+
 </body>
 </html>

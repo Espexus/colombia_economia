@@ -12,16 +12,16 @@
 <body>
     <nav class="site-navigation" aria-label="Navegación principal">
         <div class="site-navigation-inner">
-            <a class="site-navigation-home" href="../index.html">Inicio</a>
+            <a class="site-navigation-home" href="../index.html" id="tradmenu1">Inicio</a>
             <details class="site-navigation-dropdown">
-                <summary>Grandes compañías</summary>
+                <summary id="tradmenu2">Grandes compañías</summary>
                 <div class="site-navigation-submenu">
                     <a href="ecopetrol.html">Ecopetrol</a>
                     <a href="epm.html">EPM</a>
                 </div>
             </details>
             <details class="site-navigation-dropdown">
-                <summary>Emprendimientos locales</summary>
+                <summary id="tradmenu3">Emprendimientos locales</summary>
                 <div class="site-navigation-submenu">
                     <a href="lulidetalles.html">Lulidetalles</a>
                     <a href="anlucookies.html">Anlu Cookies</a>
@@ -32,16 +32,16 @@
     <div class="site-navigation-space" aria-hidden="true"></div>
     
     <section id="hero" class="hero">
-            <h1>Lulidetalles</h1>
-            <p class="descripcion-hero">Flores eternas hechas en limpiapipas<br>detalles únicos que duran para siempre</p>
+            <h1 id="trad1">Lulidetalles</h1>
+            <p class="descripcion-hero" id="trad2">Flores eternas hechas en limpiapipas<br>detalles únicos que duran para siempre</p>
     </section>
 
     <!-- aqui están mis botones de navegación entre pestañas -->
     <section>
         <nav aria-label="Navegación de Lulidetalles" class="menu-secundario menu-lulidetalles">
-            <button id="inicio" class="boton-navegacion boton-navegacion-activo">Inicio</button>
-            <button id="ramos" class="boton-navegacion">Ramos</button>
-            <button id="figuras" class="boton-navegacion">Figuras</button>
+            <button id="inicio" class="boton-navegacion boton-navegacion-activo" data-trad-id="trad3">Inicio</button>
+            <button class="boton-navegacion" id="trad4">Ramos</button>
+            <button class="boton-navegacion" id="trad5">Figuras</button>
         </nav>
     </section>
 
@@ -51,10 +51,10 @@
         
 
         <section class="fondo-blanco">
-            <h2>Sobre nosotros</h2>
+            <h2 id="trad6">Sobre nosotros</h2>
 
             <div class="horizontal-flex">
-                <p class="font12">
+                <p class="font12" id="trad7">
                     Somos una tienda online de detalles elaborados con limpiapias, tales como ramos, figuras y entre otros. Estamos ubicados en la ciudad de Cúcuta, somos un emprendimiento personal que busca ser de ayuda y servicio a las diferentes pesonas que estén interesados en entregar un lindo detalle a una persona especial.<br>
                     Gracias por elegirnos
                 </p>
@@ -63,19 +63,19 @@
         </section>
 
         <section class="fondo-rosa">
-            <h2>Ubicación y contacto</h2>
+            <h2 id="trad8">Ubicación y contacto</h2>
 
             <div class="horizontal-flex">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126459.75559173593!2d-72.58682435208893!3d7.908922015653015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66459c645dd28b%3A0x26736c1ff4db5caa!2sC%C3%BAcuta%2C%20Norte%20de%20Santander!5e0!3m2!1ses!2sco!4v1790535581372!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
                 <div class="info-contacto">
-                    <h3>Medios de contacto</h3>
+                    <h3 id="trad9">Medios de contacto</h3>
 
                     <a href="https://wa.me/573209266341?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20interes%C3%A9%20en%20tus%20servicios%20puedes%20contarme%20m%C3%A1s%3F" class="enlace-normalizado" target="_blank" rel="noopener">WhatsApp: 3209266341</a>
 
                     <a href="https://www.instagram.com/lulidetalles_/" class="enlace-normalizado">Instagram: @lulidetalles_</a>
                     <a href="https://www.tiktok.com/@lulidetalles_" class="enlace-normalizado">TikTok: @lulidetalles_</a>
-                    <a href="tel:+573209266341" class="enlace-normalizado">Telefono: 3209266341</a>
+                    <a href="tel:+573209266341" class="enlace-normalizado" id="trad10">Telefono: 3209266341</a>
                 </div>
 
                 
@@ -83,24 +83,24 @@
         </section>
 
         <section class="fondo-blanco">
-            <h2>Contactarnos</h2>
+            <h2 id="trad11">Contactarnos</h2>
 
             <form action="" id="formulario" class="horizontal-flex-3">
                 <div class="parte-form">
-                    <label for="">Soy: </label>
+                    <label for="" id="trad12">Soy: </label>
                     <input type="text" name="nombre" placeholder="Nombre">
                 </div>
 
                 <div class="parte-form">
-                    <label for="">Me interesa: </label>
+                    <label for="" id="trad13">Me interesa: </label>
                     <select name="servicio">
-                        <option value="ramos">Ramos</option>
-                        <option value="figuras">Figuras</option>
+                        <option value="ramos" id="trad14">Ramos</option>
+                        <option value="figuras" id="trad15">Figuras</option>
                     </select>
                 </div>
 
                 <div class="parte-form">
-                    <label for="">Estoy en: </label>
+                    <label for="" id="trad16">Estoy en: </label>
                     <select name="servicio">
                         <option value="otra">Otra ciudad</option>
                         <option value="bogota">Bogotá</option>
@@ -134,7 +134,7 @@
                 </div>
                 
             </form>
-            <a href="https://wa.me/573209266341" class="boton-formulario">Consultar</a>
+            <a href="https://wa.me/573209266341" class="boton-formulario" id="trad17">Consultar</a>
         </section>
     </section>
 
@@ -144,31 +144,31 @@
             <div class="flex-3">
                 <div class="item-flex">
                     <img src="../imgs/ramo1.png" alt="Ramo de limpiapipas orejitas" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo de limpiapipas orejitas</p>
+                    <p class="descripcion-item-flex" id="trad18">Ramo de limpiapipas orejitas</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/ramo2.png" alt="Ramo con maquillaje" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo con maquillaje</p>
+                    <p class="descripcion-item-flex" id="trad19">Ramo con maquillaje</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/ramo3.png" alt="Ramo girasol y rosas" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo girasol y rosas</p>
+                    <p class="descripcion-item-flex" id="trad20">Ramo girasol y rosas</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/ramo4.png" alt="Ramo Wonderland" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo Wonderland</p>
+                    <p class="descripcion-item-flex" id="trad21">Ramo Wonderland</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/ramo5.png" alt="Ramo flores azules" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo flores azules</p>
+                    <p class="descripcion-item-flex" id="trad22">Ramo flores azules</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/ramo6.png" alt="Ramo Hello Kitty" class="img-item-flex">
-                    <p class="descripcion-item-flex">Ramo Hello Kitty</p>
+                    <p class="descripcion-item-flex" id="trad23">Ramo Hello Kitty</p>
                 </div>
             </div>
 
-            <a href="https://wa.me/573209266341" class="boton-formulario boton-invertido-centrado">Consultar</a>
+            <a href="https://wa.me/573209266341" class="boton-formulario boton-invertido-centrado" id="trad24">Consultar</a>
 
 
         </section>
@@ -180,40 +180,42 @@
             <div class="flex-3">
                 <div class="item-flex">
                     <img src="../imgs/figura1.png" alt="Pequeño camaleón" class="img-item-flex">
-                    <p class="descripcion-item-flex">Pequeño camaleón</p>
+                    <p class="descripcion-item-flex" id="trad25">Pequeño camaleón</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/figura2.png" alt="Linda flor de limpiapipas" class="img-item-flex">
-                    <p class="descripcion-item-flex">Linda flor de limpiapipas</p>
+                    <p class="descripcion-item-flex" id="trad26">Linda flor de limpiapipas</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/figura3.png" alt="Macetita" class="img-item-flex">
-                    <p class="descripcion-item-flex">Macetita</p>
+                    <p class="descripcion-item-flex" id="trad27">Macetita</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/figura4.png" alt="Messi" class="img-item-flex">
-                    <p class="descripcion-item-flex">Messi</p>
+                    <p class="descripcion-item-flex" id="trad28">Messi</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/figura5.png" alt="Cr7" class="img-item-flex">
-                    <p class="descripcion-item-flex">Cr7</p>
+                    <p class="descripcion-item-flex" id="trad29">Cr7</p>
                 </div>
                 <div class="item-flex">
                     <img src="../imgs/figura6.png" alt="Girasol" class="img-item-flex">
-                    <p class="descripcion-item-flex">Girasol</p>
+                    <p class="descripcion-item-flex" id="trad30">Girasol</p>
                 </div>
             </div>
 
-            <a href="https://wa.me/573209266341" class="boton-formulario boton-invertido-centrado">Consultar</a>
+            <a href="https://wa.me/573209266341" class="boton-formulario boton-invertido-centrado" id="trad31">Consultar</a>
 
 
         </section>
     </section>
 
-    <footer>
+    <footer id="trad32">
         © 2026 Lulidetalles. Todos los derechos reservados.
     </footer>
 
     <script src="../js/navegacion-subpaginas.js"></script>
+    <script src="../js/cargarPreferencias.js"></script>
+
 </body>
 </html>

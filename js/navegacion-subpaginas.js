@@ -1,5 +1,6 @@
 (function() {
     document.addEventListener("DOMContentLoaded", () => {
+
         document.querySelectorAll(".menu-secundario").forEach(menu => {
             const botones = Array.from(menu.querySelectorAll(".boton-navegacion"));
             const secciones = Array.from(document.querySelectorAll(".seccion"));
@@ -25,5 +26,6 @@
             })
         });
     });
+
 
 })()

@@ -59,6 +59,76 @@
     text-shadow: none;
 }
 
+.caja-fixed {
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+#formulario-preferencias {
+    display: flex;
+    width: min(100%, 32rem);
+    max-height: calc(100vh - 2rem);
+    margin: 0;
+    padding: 2rem;
+    gap: 0.9rem;
+    overflow-y: auto;
+    border: 1px solid var(--economia-gris-claro);
+    border-radius: 0.5rem;
+    background-color: var(--economia-blanco);
+    color: var(--economia-texto);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    pointer-events: auto;
+}
+
+#formulario-preferencias label {
+    color: var(--economia-negro);
+    font-family: inherit;
+    font-size: 1.05rem;
+}
+
+#formulario-preferencias input,
+#formulario-preferencias select {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--economia-gris);
+    border-radius: 0.25rem;
+    background-color: var(--economia-blanco);
+    color: var(--economia-texto);
+    font-size: 1rem;
+}
+#formulario-preferencias input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    flex: 0 0 auto;
+    vertical-align: middle;
+}
+
+#formulario-preferencias .boton {
+    padding: 0.75rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: var(--economia-negro);
+    color: var(--economia-blanco);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    #formulario-preferencias {
+        padding: 1.25rem;
+        gap: 0.7rem;
+    }
+}
+
 .economia-contenido {
     margin-top: 0;
 }
